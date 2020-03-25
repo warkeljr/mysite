@@ -1,0 +1,22 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warkeljr/mysite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warkeljr/mysite/issues"
+  },
+  "homepage": "https://github.com/warkeljr/mysite#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
