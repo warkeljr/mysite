@@ -1,8 +1,32 @@
-/* COLORS */
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px); }
+  80% {
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 html, body {
   min-height: 100%;
@@ -10,6 +34,13 @@ html, body {
   padding: 0;
   text-align: center;
   font-family: 'Merriweather', serif; }
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 h1 {
   width: 50%;
@@ -46,6 +77,15 @@ hr {
   border-width: 10px;
   margin-bottom: 50Px; }
 
+.navbar {
+  background-color: #a8d7e8; }
+
+span {
+  color: white; }
+
+.nav-item {
+  color: white; }
+
 .nav-avatar {
   height: 55px;
   border-radius: 99px;
@@ -69,36 +109,6 @@ hr {
   animation-duration: 1s;
   animation-timing-function: ease-in-out; }
 
-@keyframes moveInTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-100px); }
-  80% {
-    transform: translateY(10px); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px); }
-  80% {
-    transform: translateX(10px); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100px); }
-  80% {
-    transform: translateX(-10px); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
 .top-container {
   /* background-color: rgb(217, 231, 226); */
   /* text-align: center; */
@@ -108,8 +118,7 @@ hr {
 .header-background-image {
   width: 70%;
   margin-top: 50px;
-  margin-bottom: -267px;
-  z-index: -1; }
+  margin-bottom: -267px; }
 
 .cloud-image {
   width: 14%;

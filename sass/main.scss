@@ -1,21 +1,13 @@
 
-/* COLORS */
-$color-orange: rgb(238, 89, 74);
-$color-green: rgb(125, 135, 38);
-$color-white: rgb(255, 255, 255);
+@import 'base/animations';
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
 
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-*, *:before, *:after {
-    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
-  
-html, body {
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: 'Merriweather', serif;
-} 
 
 h1 {
     width: 50%;
@@ -58,6 +50,18 @@ hr {
     margin-bottom: 50Px;
 }
 
+.navbar {
+    background-color: $color-light-blue;
+}
+
+span {
+    color: $color-white;
+}
+
+.nav-item {
+    color: $color-white;
+}
+
 .nav-avatar {
     height: 55px;
     border-radius: 99px;
@@ -91,53 +95,6 @@ hr {
     
 }
 
-@keyframes moveInTop {
-    0% {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-
-    80% {
-        transform: translateY(10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-
-    80% {
-        transform: translateX(10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-
-    80% {
-        transform: translateX(-10px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
 
 .top-container {
     /* background-color: rgb(217, 231, 226); */
@@ -149,8 +106,7 @@ hr {
 .header-background-image {
     width:70%;
     margin-top: 50px;
-    margin-bottom: -267px;
-    z-index: -1;
+    margin-bottom: -267px;;
 }
 
 .cloud-image {
@@ -295,19 +251,4 @@ hr {
     grid-template-rows: 40px 40 px;
 }
 
-.contact-header {
-
-}
-
-.contact-menu {
-
-}
-
-.contact-content {
-
-}
-
-.contact-footer {
-
-}
 
