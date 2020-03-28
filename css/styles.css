@@ -42,6 +42,56 @@ html, body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.btn-green {
+  background-color: #7d8726;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px; }
+  .btn-green:hover {
+    background-color: #ee594a;
+    color: white; }
+
+.btn-orange {
+  background-color: #ee594a;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px; }
+  .btn-orange:hover {
+    background-color: #7d8726;
+    color: white; }
+
+.navbar {
+  background-color: #a8d7e8; }
+
+.nav-avatar {
+  height: 55px;
+  border-radius: 99px;
+  animation-name: moveInTop;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out; }
+
+@media only screen and (max-width: 600px) {
+  .nav-avatar {
+    height: 10px;
+    visibility: hidden; } }
+
 h1 {
   width: 50%;
   margin: 0 auto;
@@ -70,33 +120,15 @@ h3 {
 a {
   color: #11999E; }
 
+.contact-me a {
+  text-decoration: none; }
+
 hr {
   width: 100px;
   border-style: dotted none none;
   border-color: #e0e0e0;
-  border-width: 10px;
-  margin-bottom: 50Px; }
-
-.navbar {
-  background-color: #a8d7e8; }
-
-span {
-  color: white; }
-
-.nav-item {
-  color: white; }
-
-.nav-avatar {
-  height: 55px;
-  border-radius: 99px;
-  animation-name: moveInTop;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out; }
-
-@media only screen and (max-width: 600px) {
-  .nav-avatar {
-    height: 10px;
-    visibility: hidden; } }
+  border-width: 8px;
+  margin: 50px auto; }
 
 .header-text-main {
   animation-name: moveInLeft;
@@ -196,25 +228,6 @@ span {
 
 .contact-header {
   font-size: 40px; }
-
-.btn {
-  background-color: #7d8726;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 32px;
-  font-family: 'Montserrat', sans-serif;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 5px; }
-
-.btn:hover {
-  background-color: #ee594a;
-  color: white; }
 
 .footer {
   margin-top: 150px;

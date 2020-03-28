@@ -1,0 +1,18 @@
+.navbar {
+    background-color: $color-light-blue;
+}
+
+.nav-avatar {
+    height: 55px;
+    border-radius: 99px;
+    animation-name: moveInTop;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-avatar {
+        height: 10px;
+        visibility: hidden;
+    }
+}
